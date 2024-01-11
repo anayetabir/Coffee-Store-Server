@@ -10,18 +10,12 @@ app.use(cors());
 app.use(express.json());
 
 
-// coffeeMaster
-// 1MdzCmkNOLp950AR
-
-// console.log(process.env.DB_USER);
-// console.log(process.env.DB_PASS);
-
 
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@javascript.xigpsgh.mongodb.net/?retryWrites=true&w=majority`;
 console.log(uri);
 
-// const uri = "mongodb+srv://coffeeMaster:1MdzCmkNOLp950AR@javascript.xigpsgh.mongodb.net/?retryWrites=true&w=majority";
+
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
